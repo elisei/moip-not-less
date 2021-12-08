@@ -1,0 +1,361 @@
+/*
+ //
+ //  Moip
+ //  _____________________________________________
+*/
+#payment_form_moip_magento2_cc .field-to-pay._hidden,
+#payment_form_moip_magento2_cc_vault .field-to-pay._hidden,
+#payment_form_moip_magento2_boleto .field-to-pay._hidden,
+#payment_form_moip_magento2_cc .fieldset .field.number .credit-card-types .item._hidden,
+#payment_form_moip_magento2_cc_vault .fieldset .field.number .credit-card-types .item._hidden,
+#payment_form_moip_magento2_boleto .fieldset .field.number .credit-card-types .item._hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+#payment_form_cc_moip_magento2_cc .legend,
+#payment_form_cc_moip_magento2_cc_vault .legend,
+#payment_form_cc_moip_magento2_boleto .legend,
+#payment_form_moip_magento2_cc .checkout-payment-method .payments .legend,
+#payment_form_moip_magento2_cc_vault .checkout-payment-method .payments .legend,
+#payment_form_moip_magento2_boleto .checkout-payment-method .payments .legend{
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+#payment_form_moip_magento2_cc .checkout-payment-method .payments .legend:before,
+#payment_form_moip_magento2_cc .checkout-payment-method .payments .legend:after,
+#payment_form_moip_magento2_cc_vault .checkout-payment-method .payments .legend:before,
+#payment_form_moip_magento2_cc_vault .checkout-payment-method .payments .legend:after,
+#payment_form_moip_magento2_boleto .checkout-payment-method .payments .legend:before,
+#payment_form_moip_magento2_boleto .checkout-payment-method .payments .legend:after {
+  content: '';
+  display: table;
+}
+#payment_form_moip_magento2_cc .checkout-payment-method .payments .legend:after,
+#payment_form_moip_magento2_cc_vault .checkout-payment-method .payments .legend:after,
+#payment_form_moip_magento2_boleto .checkout-payment-method .payments .legend:after {
+   clear: both;
+}
+
+#payment_form_cc_moip_magento2_cc,
+#payment_form_cc_moip_magento2_cc_vault,
+#payment_form_cc_moip_magento2_boleto {
+  border: 1px solid;
+  border-color: #bbbbbb;
+  position: relative;
+}
+#payment_form_cc_moip_magento2_cc .legend,
+#payment_form_cc_moip_magento2_cc_vault .legend,
+#payment_form_cc_moip_magento2_boleto .legend {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid;
+  border-color: #bbbbbb;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+#payment_form_cc_moip_magento2_cc .legend-icon,
+#payment_form_cc_moip_magento2_cc_vault .legend-icon,
+#payment_form_cc_moip_magento2_boleto .legend-icon {
+  margin-right: 0;
+}
+#payment_form_cc_moip_magento2_cc .not-editable-title,
+#payment_form_cc_moip_magento2_cc_vault .not-editable-title,
+#payment_form_cc_moip_magento2_boleto .not-editable-title {
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 20px;
+}
+#payment_form_moip_magento2_cc .payment-method-label,
+#payment_form_moip_magento2_cc_vault .payment-method-label,
+#payment_form_moip_magento2_boleto .payment-method-label {
+  display: table;
+  align-items: center;
+}
+#payment_form_moip_magento2_cc .payment-method-label img,
+#payment_form_moip_magento2_cc_vault .payment-method-label img,
+#payment_form_moip_magento2_boleto .payment-method-label img {
+  width: 25px;
+}
+
+#payment_form_moip_magento2_cc .payment-method-label .payment-method-label-icon,
+#payment_form_moip_magento2_cc_vault .payment-method-label .payment-method-label-icon,
+#payment_form_moip_magento2_boleto .payment-method-label .payment-method-label-icon {
+  display: table-cell;
+  width: 1%;
+  text-align: left;
+  padding-right: 10px;
+}
+#payment_form_moip_magento2_cc .payment-method-label .payment-method-label-title,
+#payment_form_moip_magento2_cc_vault .payment-method-label .payment-method-label-title,
+#payment_form_moip_magento2_boleto .payment-method-label .payment-method-label-title {
+  display: table-cell;
+  width: 100%;
+  text-align: left;
+}
+#payment_form_moip_magento2_cc .legend .credit-card-types .item,
+#payment_form_moip_magento2_cc_vault .legend .credit-card-types .item,
+#payment_form_moip_magento2_boleto .legend .credit-card-types .item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px 0 0;
+  vertical-align: top;
+  border: unset;
+}
+#payment_form_moip_magento2_cc .legend .credit-card-types .item img,
+#payment_form_moip_magento2_cc_vault .legend .credit-card-types .item img,
+#payment_form_moip_magento2_boleto .legend .credit-card-types .item img {
+  -webkit-filter: grayscale(0%);
+  width: 20px;
+}
+#payment_form_moip_magento2_cc .field-to-pay,
+#payment_form_moip_magento2_cc_vault .field-to-pay,
+#payment_form_moip_magento2_boleto .field-to-pay {
+  margin: 0 20px;
+}
+#payment_form_moip_magento2_cc .fieldset .field,
+#payment_form_moip_magento2_cc_vault .fieldset .field,
+#payment_form_moip_magento2_boleto .fieldset .field {
+  display: inline-block;
+  width: 100%;
+}
+#payment_form_moip_magento2_cc .fieldset .field.choice,
+#payment_form_moip_magento2_cc_vault .fieldset .field.choice,
+#payment_form_moip_magento2_boleto .fieldset .field.choice {
+  margin-bottom: 20px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group {
+  position: relative;
+  margin-bottom: 20px;
+  vertical-align: top;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.opc-payment .payment-methods .payment-method .payment-method-billing-address .field.choice input {
+  top: unset;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="text"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="text"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="text"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="password"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="password"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="password"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="url"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="url"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="url"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="tel"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="tel"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="tel"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="search"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="search"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="search"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="number"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="number"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="number"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="datetime"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="datetime"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="datetime"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input[type="email"],
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input[type="email"],
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input[type="email"],
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control select,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control select,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control select {
+  height: unset;
+  border-radius: 3px;
+  font-weight: 600;
+  height: unset;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 10px;
+  width: 100%;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control select,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control select {
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input::placeholder,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input::placeholder,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input::placeholder {
+  color: transparent;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input::-webkit-input-placeholder,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input::-webkit-input-placeholder,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input::-webkit-input-placeholder {
+  color: transparent;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input::-ms-input-placeholder,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input::-ms-input-placeholder,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input::-ms-input-placeholder {
+  color: transparent;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input::-moz-placeholder,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input::-moz-placeholder,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input::-moz-placeholder {
+  color: transparent;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control .label,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control .label,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control .label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: 15px 15px;
+  pointer-events: none;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 0;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  width: 100%;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control._with-tooltip input,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control._with-tooltip input,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control._with-tooltip input {
+  width: 100%;
+  padding-right: 25px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control._with-tooltip .field-tooltip,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control._with-tooltip .field-tooltip,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control._with-tooltip .field-tooltip {
+  top: 6px;
+  right: 5px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control select:not(:checked),
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control select:not(:checked),
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control select:not(:checked),
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input:not(:placeholder-shown),
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input:not(:placeholder-shown),
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input:not(:placeholder-shown) {
+  box-shadow: none;
+  padding-bottom: 0px;
+  padding-top: 15px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control select:not(:checked) ~ .label,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control select:not(:checked) ~ .label,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control select:not(:checked) ~ .label,
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control input:not(:placeholder-shown) ~ .label,
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control input:not(:placeholder-shown) ~ .label,
+#payment_form_moip_magento2_boleto .fieldset .field.moip-input-group .control input:not(:placeholder-shown) ~ .label {
+  font-size: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-top: 5px;
+  font-size: 10px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.moip-input-group .control select:not(:checked),
+#payment_form_moip_magento2_cc_vault .fieldset .field.moip-input-group .control select:not(:checked) {
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.number,
+#payment_form_moip_magento2_cc_vault .fieldset .field.number,
+#payment_form_moip_magento2_boleto .fieldset .field.number {
+  width: 70%;
+  float: left;
+}
+#payment_form_moip_magento2_cc .fieldset .field.number .credit-card-types,
+#payment_form_moip_magento2_cc_vault .fieldset .field.number .credit-card-types,
+#payment_form_moip_magento2_boleto .fieldset .field.number .credit-card-types {
+  line-height: 4;
+}
+#payment_form_moip_magento2_cc .fieldset .field.number .credit-card-types .item,
+#payment_form_moip_magento2_cc_vault .fieldset .field.number .credit-card-types .item,
+#payment_form_moip_magento2_boleto .fieldset .field.number .credit-card-types .item {
+  border: unset;
+}
+
+#payment_form_moip_magento2_cc .fieldset .field.number .credit-card-types .item._active img,
+#payment_form_moip_magento2_cc_vault .fieldset .field.number .credit-card-types .item._active img,
+#payment_form_moip_magento2_boleto .fieldset .field.number .credit-card-types .item._active img {
+  -webkit-filter: grayscale(0%);
+  border: unset;
+}
+#payment_form_moip_magento2_cc .fieldset .field.number .credit-card-types .item._inactive,
+#payment_form_moip_magento2_cc_vault .fieldset .field.number .credit-card-types .item._inactive,
+#payment_form_moip_magento2_boleto .fieldset .field.number .credit-card-types .item._inactive {
+  opacity: 0.4;
+}
+#payment_form_moip_magento2_cc .fieldset .field.number .credit-card-types .item img,
+#payment_form_moip_magento2_cc_vault .fieldset .field.number .credit-card-types .item img,
+#payment_form_moip_magento2_boleto .fieldset .field.number .credit-card-types .item img {
+  -webkit-filter: unset;
+  -webkit-transition: all 0.6s ease;
+}
+#payment_form_moip_magento2_cc .fieldset .field.cvv,
+#payment_form_moip_magento2_cc_vault .fieldset .field.cvv,
+#payment_form_moip_magento2_boleto .fieldset .field.cvv {
+  width: 30%;
+  float: right;
+  padding-left: 10px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.cvv .control._with-tooltip,
+#payment_form_moip_magento2_cc_vault .fieldset .field.cvv .control._with-tooltip {
+  padding-right: 0;
+}
+#payment_form_moip_magento2_cc .fieldset .field.cvv .field-tooltip .field-tooltip-action span span,
+#payment_form_moip_magento2_cc_vault .fieldset .field.cvv .field-tooltip .field-tooltip-action span span  {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+#payment_form_moip_magento2_cc .fieldset .field.date,
+#payment_form_moip_magento2_cc_vault .fieldset .field.date,
+#payment_form_moip_magento2_boleto .fieldset .field.date {
+  margin-bottom: 0;
+}
+#payment_form_moip_magento2_cc .fieldset .field.date .group-2,
+#payment_form_moip_magento2_cc_vault .fieldset .field.date .group-2,
+#payment_form_moip_magento2_boleto .fieldset .field.date .group-2 {
+  display: inline-flex;
+  width: 100%;
+}
+#payment_form_moip_magento2_cc .fieldset .field.date .group-2 .year,
+#payment_form_moip_magento2_cc_vault .fieldset .field.date .group-2 .year,
+#payment_form_moip_magento2_boleto .fieldset .field.date .group-2 .year {
+  padding-left: 10px;
+  margin-top: 0;
+}
+#payment_form_moip_magento2_cc_vault .field-to-pay {
+  margin: 0 0;
+}
+.checkout-onepage-success .field .control._with-tooltip input {
+  margin-right: 0;
+  padding-right: 40px;
+  width: 100%;
+}
+.checkout-onepage-success .field .control._with-tooltip button {
+  margin-top: -1px;
+}
+.checkout-onepage-success .field.moip-input-group {
+  margin: 0 auto;
+  max-width: 500px;
+}

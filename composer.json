@@ -1,0 +1,22 @@
+{
+    "name": "o2ti/moip-not-less",
+    "description": "Theme for Moip module in not less stores",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Bruno Elisei",
+            "email": "brunoelisei@o2ti.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "O2TI\\MoipNotLess\\": ""
+        }
+    }
+}
